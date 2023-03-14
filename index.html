@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Azérum | Главная</title>
+
+    
+    <meta name="description" content="Надёжный хостинг для ваших проектов. Мы продаем виртуальные сервера (VPS, VDS)">
+    <meta name="keywords" content="vds, vps, виртуальный сервер, облачный сервер, выделенный сервер, vm, web, виртуальный, хостинг, защита от атак, защита от ddos-атак, antiddos, azerum, azerum.pro, azerum pro, хостинг, сервис провайдер">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon.png">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link rel="stylesheet" media="screen" href="/assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="/assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    
+    <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
+
+    
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+          root.classList.add('dark-mode');
+    </script>
+
+    
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c0390827-2cd9-421e-a621-17ed7bc39cbb";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  </head>
+
+
+  
+  <body>
+
+    
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+      </div>
+    </div>
+
+
+    
+    
+    <main class="page-wrapper">
+
+
+      
+      
+      <header class="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky">
+        <div class="container px-3">
+          <a href="/" class="navbar-brand pe-3">
+            azérum
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">услуги</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="https://my.azerum.pro/store/vps" class="dropdown-item py-1">виртуальные сервера</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">контакты</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="https://vk.com/azerumhost" class="dropdown-item">вконтакте</a></li>
+                    <li><a href="https://t.me/azerumhost" class="dropdown-item">телеграм</a></li>
+                    <li><a href="/contact" class="dropdown-item">дополнительно</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="https://status.azerum.pro" class="nav-link">статус серверов</a>
+                </li>
+              </ul>
+            </div>   
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://my.azerum.pro" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;биллинг
+          </a>
+        </div>
+      </header>
+
+
+      
+      <section class="dark-mode bg-dark bg-size-cover bg-repeat-0 bg-position-center position-relative overflow-hidden py-5 mb-4" style="background-image: url(assets/img/landing/saas-3/hero/hero-bg.jpg);">
+        <div class="container position-relative zindex-2 pt-5 pb-md-2 pb-lg-4 pb-xl-5">
+          <div class="row pt-3 pb-2 py-md-4">
+
+            
+            <div class="col-xl-5 col-md-6 pt-lg-5 text-center text-md-start mb-4 mb-md-0">
+              <h1 class="display-3 pb-2 pb-sm-3">azérum — это <span class="text-gradient-primary">надёжный</span> хостинг</h1>
+              <p class="fs-lg d-md-none d-xl-block pb-2 pb-md-0 mb-4 mb-md-5">мощный и надёжный хостинг для ваших проектов. теперь ни один конкурент не сможет вам помешать</p>
+              <div class="d-flex justify-content-center justify-content-md-start pb-2 pt-lg-2 pt-xl-0">
+                <a href="https://my.azerum.pro" class="btn btn-lg btn-primary shadow-primary me-3 me-sm-4">перейти в панель</a>
+                <a href="/contact" class="btn btn-lg btn-outline-secondary">контакты</a>
+              </div>
+            </div>
+
+             
+            <div class="col-xl-7 col-md-6 d-md-flex justify-content-end">
+              <div class="parallax mx-auto ms-md-0 me-md-n5" style="max-width: 675px;">
+                <div class="parallax-layer zindex-2" data-depth="0.1">
+                  <img src="/assets/img/landing/saas-3/hero/main-head.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="position-relative py-5">
+        <div class="container position-relative zindex-5 pb-md-4 pt-md-2 pt-lg-3 pb-lg-5">
+          <div class="row justify-content-center text-center pb-3 mb-sm-2 mb-lg-3">
+            <div class="col-xl-6 col-lg-7 col-md-9">
+              <h2 class="h1 mb-lg-4">почему azérum?</h2>
+              <p class="fs-lg text-muted mb-0">мы предоставляем услуги, которые <strong>соответствуют</strong> с указанными характеристиками.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0 pb-xl-3">
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/comments.svg" width="40">
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">поддержка</h3>
+                  <p class="mb-0">ответим на любой вопрос — подскажем, какой тариф лучше выбрать.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/analytics.svg" width="40">
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">статистика услуги</h3>
+                  <p class="mb-0">удобная и информативная статистика использования ресурсов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/group.svg" width="40" >
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">реферальная программа</h3>
+                  <p class="mb-0">приглашайте новых клиентов на наш хостинг, и получайте бонусы!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/notifications.svg" width="40">
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">уведомления</h3>
+                  <p class="mb-0">понятные и своевременные уведомления, о необходимости продления и об атаках.</p>
+                </div>
+              </div>
+              <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block d-md-none">
+              <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/tasks.svg" width="40">
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">современный интерфейс</h3>
+                  <p class="mb-0">современный дизайн помогает не потеряться в поиске нужной функции.</p>
+                </div>
+              </div>
+              <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block d-md-none">
+              <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+            <div class="col position-relative">
+              <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                <div class="d-table bg-secondary rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                  <img src="/assets/img/landing/saas-3/icons/security.svg" width="40">
+                </div>
+                <div class="card-body text-center">
+                  <h3 class="h5 pb-1 mb-2">защита от атак</h3>
+                  <p class="mb-0">не дайте конкурентам обрушить ваш бизнес — наша защита обеспечит наилучшую гарантию стабильности проекта.</p>
+                </div>
+              </div>
+              <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block d-md-none">
+              <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="steps steps-sm steps-horizontal-md steps-center pb-5 mb-md-2 mb-lg-3">
+          <div class="step">
+            <div class="step-number">
+              <div class="step-number-inner">1</div>
+            </div>
+            <div class="step-body">
+              <h3 class="h4 mb-3">регистрация</h3>
+              <p class="mb-0">зарегистрируйтесь в биллинге для заказа услуг.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">
+              <div class="step-number-inner">2</div>
+            </div>
+            <div class="step-body">
+              <h3 class="h4 mb-3">выбор необходимой услуги</h3>
+              <p class="mb-0">выберите ту услугу, которая вам нужна — а низкая цена поможет с легкостью продлевать её.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">
+              <div class="step-number-inner">3</div>
+            </div>
+            <div class="step-body">
+              <h3 class="h4 mb-3">оплата</h3>
+              <p class="mb-0">легко оплачивайте ваши услуги при помощи множества способов оплаты.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">
+              <div class="step-number-inner">4</div>
+            </div>
+            <div class="step-body">
+              <h3 class="h4 mb-3">активация услуги</h3>
+              <p class="mb-0">услуга активируется автоматически после оплаты за 120 секунд.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container position-relative zindex-2">
+        <div class="row justify-content-center text-center pb-3 mb-sm-2 mb-lg-3">
+          <div class="col-xl-6 col-lg-7 col-md-9">
+            <h2 class="h1 mb-lg-4">наши тарифы</h2>
+            <p class="fs-lg text-muted mb-0">выберите именно тот тариф, который вам нужен.</p>
+          </div>
+        </div>
+        <div class="price-switch-wrapper">
+          <div class="dark-mode pb-2 pb-lg-3">
+            </div>  
+          </div>
+          <div class="table-responsive-lg">
+            <div class="d-flex align-items-center pb-4">
+              <div class="border rounded-3 rounded-end-0 shadow-sm me-n1" style="width: 32%; min-width: 16rem;">
+                <div class="card bg-light h-100 border-0 border-end rounded-end-0 py-3 py-sm-4 py-lg-5">
+                  <div class="card-body text-center">
+                    <h3 class="mb-2">Promo</h3>
+                    <h6 class="mb-2">локация: франция</h6>
+                    <h6 class="mb-2">процессор: 2 ядра (ryzen 7 3700x)</h6>
+					          <h6 class="mb-2">озу: 2гб</h6>
+					          <h6 class="mb-2">диск: 50гб NVME</h6>
+                    <div class="display-5 text-dark mb-1" data-monthly-price="">199₽/месяц</div>
+                  </div>
+                  <div class="card-footer border-0 text-center pt-0 pb-4">
+                    <a href="https://my.azerum.pro" class="btn btn-outline-primary btn-lg">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary position-relative rounded-3 shadow-primary shadow-dark-mode-none zindex-2 p-4" style="width: 36%; min-width: 18rem;">
+                <div class="card bg-transparent border-light py-3 py-sm-4 py-lg-5">
+                  <div class="card-body text-light text-center">
+                    <h3 class="mb-2">Cerberus</h3>
+                    <h6 class="mb-2">локация: франция</h6>
+                    <h6 class="mb-2">процессор: 8 ядер (ryzen 7 3700x)</h6>
+					          <h6 class="mb-2">озу: 10гб</h6>
+					          <h6 class="mb-2">диск: 200гб NVME</h6>
+                    <div class="display-5 text-dark mb-1" data-monthly-price="">999₽/месяц</div>
+                  </div>
+                  <div class="card-footer border-0 text-center pt-0 pb-4">
+                    <a href="https://my.azerum.pro" class="btn btn-light btn-lg shadow-secondary">заказать</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="border rounded-3 rounded-start-0 shadow-sm" style="width: 32%; min-width: 16rem;">
+                <div class="card bg-light h-100 border-0 rounded-start-0 py-3 py-sm-4 py-lg-5">
+                  <div class="card-body text-light text-center">
+                    <h3 class="mb-2">Argentum</h3>
+                    <h6 class="mb-2">локация: франция</h6>
+                    <h6 class="mb-2">процессор: 12 ядер (ryzen 7 3700x)</h6>
+					          <h6 class="mb-2">озу: 24гб</h6>
+					          <h6 class="mb-2">диск: 400гб NVME</h6>
+                    <div class="display-5 text-dark mb-1" data-monthly-price="">1999₽/месяц</div>
+                  </div>
+                  <div class="card-footer border-0 text-center pt-0 pb-4">
+                    <a href="https://my.azerum.pro" class="btn btn-outline-primary btn-lg">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <br>
+      <section class="container">
+        <div class="dark-mode bg-dark bg-size-cover bg-position-center bg-repeat-0 position-relative overflow-hidden rounded-3 py-lg-3 py-xl-5 px-4 px-lg-5 px-xl-0" style="background-image: url(assets/img/landing/saas-3/cta-bg.jpg);">
+          <div class="row position-relative zindex-2 py-5 my-1 my-md-3">
+            <div class="col-md-6">
+              <div class="mx-auto" style="max-width: 440px;">
+                <h2 class="h1 pb-1 pb-md-3 pb-lg-4">давайте начнём прямо сейчас!</h2>
+                <ul class="list-unstyled fs-lg d-md-none pb-3">
+                  <li class="d-flex mb-2">
+                    <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                    быстрые VPS, операции без задержек
+                  </li>
+                  <li class="d-flex mb-2">
+                    <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                    круглосуточная поддержка, если что-то пошло не так
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                    низкие цены, можно не тратить лишние средства
+                  </li>
+                </ul>
+                <a href="https://my.azerum.pro" class="btn btn-lg btn-primary shadow-primary w-100 w-sm-auto">оформить заказ</a>
+              </div>
+            </div>
+            <div class="col-md-6 pt-lg-3 pt-xl-4">
+              <ul class="list-unstyled fs-lg d-none d-md-block">
+                <li class="d-flex mb-2">
+                  <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                  быстрые VPS, операции без задержек
+                </li>
+                <li class="d-flex mb-2">
+                  <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                  круглосуточная поддержка, если что-то пошло не так
+                </li>
+                <li class="d-flex">
+                  <i class="bx bx-check lead text-primary me-2" style="margin-top: .125rem;"></i>
+                  низкие цены, можно не тратить лишние средства
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          &copy;&nbsp;&nbsp;Azérum&nbsp;&nbsp;|&nbsp;&nbsp;Полное или частичное копирование запрещено
+        </p>
+      </div>
+    </footer>
+    
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="/assets/vendor/rellax/rellax.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="/assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+
+    
+    <script src="/assets/js/theme.min.js"></script>
+  </body>
+</html>
